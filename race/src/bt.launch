@@ -1,0 +1,17 @@
+<launch>
+    
+    <group ns="perception">
+        <node pkg="race" type="perception.py" name="perception" />
+    </group>
+    <group ns="marker">
+        <node pkg="race" type="marker.py" name="basic_shapes" />
+    </group>
+    <group ns="new_marker">
+        <node pkg="race" type="new_marker.py" name="basic" />
+    </group>
+    <group ns="test">
+        <node pkg="race" type="test.py" name="cones" />
+    </group>
+    
+  
+</launch>
